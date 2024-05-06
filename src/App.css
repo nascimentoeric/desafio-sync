@@ -1,38 +1,74 @@
-.App {
+body{
+  background-color: #222 !important;
+  color: #fff !important;
+}
+
+.profile-image{
+  width: 200px !important;
+  height: 200px !important;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.row{
+  width: 100%;
+}
+
+.container{
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.1); 
+  border-radius: 10px; 
+}
+
+.user-info{
+  margin-top: 130px;
+  margin-bottom: 20px;
+}
+
+.perfil{
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/*.perfil img{
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}*/
+
+.atualiza-form{
+  margin-top: 20px;
+  /*margin-left: -70px;*/
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.atualiza-form label{
+  display: block;
+  margin-bottom: 10px;
+  text-align: left;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.atualiza-form,
+.atualiza-form textarea{
+  width: calc(100% - 20px);
+  padding: 8px;
+  margin-bottom: 10px;
+  background-color: rgba(255, 255, 255, 0.1); /* Adiciona um fundo semitransparente */
+  color: #fff; /* Define a cor do texto como branca */
+  border: none;
+  border-radius: 5px; /* Borda arredondada para os campos de formulário */
 }
 
-.App-link {
-  color: #61dafb;
+.atualiza-form button{
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.atualiza-form button:hover{
+  background-color: #0056b3;
 }
